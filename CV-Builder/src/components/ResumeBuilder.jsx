@@ -1,10 +1,12 @@
+// ResumeBuilder Component
+
 import PersonalDetails from './PersonalDetails';
 
-const ResumeBuilder = ({text, handleTextChange}) => {
+const ResumeBuilder = ({ personalDetails, handlePersonalDetailsChange }) => {
 
     return (
         <>
-            <PersonalDetails text={text} handleTextChange={handleTextChange}/>
+            <PersonalDetails personalDetails={personalDetails} handlePersonalDetailsChange={handlePersonalDetailsChange}/>
         </>
     );
 }
